@@ -4007,6 +4007,24 @@ var redisCommands = map[string]redisCommand{
 			},
 		},
 	},
+	"JSON.GET": {
+		"HASH",
+		[]keySpec{
+			{
+				"index",
+				1,
+				"",
+				0,
+				"range",
+				0,
+				1,
+				0,
+				0,
+				0,
+				0,
+			},
+		},
+	},
 	"HSETNX": {
 		"HASH",
 		[]keySpec{
@@ -4026,6 +4044,42 @@ var redisCommands = map[string]redisCommand{
 		},
 	},
 	"HSET": {
+		"HASH",
+		[]keySpec{
+			{
+				"index",
+				1,
+				"",
+				0,
+				"range",
+				0,
+				1,
+				0,
+				0,
+				0,
+				0,
+			},
+		},
+	},
+	"JSON.ARRAPPEND": {
+		"HASH",
+		[]keySpec{
+			{
+				"index",
+				1,
+				"",
+				0,
+				"range",
+				0,
+				1,
+				0,
+				0,
+				0,
+				0,
+			},
+		},
+	},
+	"JSON.SET": {
 		"HASH",
 		[]keySpec{
 			{
